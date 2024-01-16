@@ -1,0 +1,55 @@
+ul,
+li {
+    padding: 0;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+p {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+}
+
+.container {
+    width: 50%;
+    height: 100%;
+    margin: 0 auto;
+    /* background-color: rgb(161, 128, 210); */
+}
+
+.content {
+    /* background-color: aqua; */
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    box-sizing: inner;
+}
+
+.content>input,
+select,
+textarea,
+button {
+    margin: 10px 0;
+    height: 30px;
+    padding-left: 10px;
+    border-radius: 5px;
+}
+
+.create {
+    background-color: rgb(78, 87, 210);
+    color: white;
+    border: 0;
+    cursor: pointer;
+}

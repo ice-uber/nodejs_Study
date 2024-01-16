@@ -1,0 +1,114 @@
+ul,
+li {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.container {
+  width: 50%;
+  height: 100%;
+  margin: 0 auto;
+  /* background-color: rgb(161, 128, 210); */
+}
+
+.content {
+  overflow: hidden;
+}
+
+
+
+.content>li {
+  margin-bottom: 20px;
+  height: 70px;
+  border: 1px solid rgb(173, 173, 173);
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.time {
+  background-color: pink;
+  height: 40%;
+  border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+.time>p {
+  padding-top: 5px;
+  padding-left: 10px;
+
+
+}
+
+.detail {
+  display: flex;
+  /* background-color: beige; */
+  padding-left: 30px;
+  padding-top: 10px;
+}
+
+.title {
+  width: 60%;
+}
+
+.type {
+  padding: 2px 5px;
+  color: white;
+  border-radius: 4px;
+  background-color: orange;
+  margin-right: 100px;
+}
+
+.number {
+  margin-right: 50px;
+  width: 10%;
+}
+
+.detail:hover .operate {
+  display: inline-block;
+}
+
+.operate {
+  cursor: pointer;
+  display: none;
+}
+
+.add {
+  margin-top: 5px ;
+  cursor: pointer;
+  background-color: rgb(7, 214, 49);
+  color: white;
+  border: 0;
+  border-radius: 7px;
+  padding: 6px 10px;
+}
+
+.active {
+  background-color: rgba(0, 253, 21 , 0.3);
+  color: green;
+}
+
+.unActive {
+  background-color: rgba(239, 25, 10, 0.2);
+  color: red;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>记账本</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='/../stylesheets/index.css'>
+  <!-- <script src='main.js'></script> -->
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <h1>记账本</h1>
+    <a href="/logout">退出登录</a>
+  </div>
+  <a href="/account" class="add">新增记账</a>
+  <ul class="content">
+    <% accountList.forEach( item => { %>
+    <li>
+      <div class="time <%= item.type === 1 ? 'active' : 'unActive' %>" >
+        <p> <%= moment(item.time).format('YYYY-MM-DD') %></p>
+      </div>
+      <div class="detail" >
+        <p class="title"><%= item.title  %></p>
+        <span class="type" style="background-color: <%= item.type === 1 ? 'rgb(7, 214, 49)' : 'orange' %>;"><%= item.type === 1 ? '收入' : '支出' %> </span>
+        <span class="number"><%= item.number %>元</span>
+        <a class="operate" href="/account/delete/<%=item._id %>">X</a>
+      </div>
+    </li>
+    <% } )%>
+
+  </ul>
+</div>
+</body>
+
+</html>

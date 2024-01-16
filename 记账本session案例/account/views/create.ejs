@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>记账本</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/../stylesheets/create.css'>
+    <!-- <script src='main.js'></script> -->
+</head>
+
+<body>
+<div class="container">
+    <h1>添加记录</h1>
+    <hr>
+    <form action="/account/create" method="post" class="content">
+        <input type="text" placeholder="事项" name="title">
+        <input type="date" name="time">
+        <select name="type" id="">
+            <option value="-1">支出</option>
+            <option value="1">收入</option>
+            <input type="text" placeholder="金额" name="number">
+        </select>
+        <textarea name="tips" id="" placeholder="备注"></textarea >
+        <button class="create">添加</button>
+    </form>
+</div>
+</body>
+
+</html>
